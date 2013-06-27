@@ -1,5 +1,5 @@
 module PaginateAlphabetically
-  ALL_LETTERS = ('A'..'Z','а'..'я').to_a
+  ALL_LETTERS = ('A'..'Z')+('а'..'я').to_a
   module ActiveRecord
     def paginate_alphabetically(params)
       @attribute = params[:by]
